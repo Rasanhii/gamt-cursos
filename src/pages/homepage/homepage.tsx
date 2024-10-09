@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="homepage-container">
       <div className="sidebar">
-        <img src="src/assets/gamt.png" alt="Gamt" className="logo" />
+        <img src="src/assets/gamt-header.png" alt="Gamt" className="logo" />
       </div>
       <div className="main-content">
         <div className="courses-container">
@@ -24,6 +24,15 @@ const Home = () => {
             <p>Curso de TypeScript</p>
             <span>Tipos no JavaScript para maior segurança.</span>
           </div>
+          <div className="curso">
+            <p>Curso de TypeScript</p>
+            <span>Tipos no JavaScript para maior segurança.</span>
+          </div>
+          <div className="curso">
+            <p>Curso de TypeScript</p>
+            <span>Tipos no JavaScript para maior segurança.</span>
+          </div>
+                              
         </div>
       </div>
     </div>

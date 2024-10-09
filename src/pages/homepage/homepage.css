@@ -14,8 +14,8 @@
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 .main-content {
@@ -23,19 +23,24 @@
   display: flex;
   justify-content: center;
   align-items: flex-start; /* Alinha os cards ao topo */
+  padding: 20px; /* Espaçamento interno nas laterais */
 }
 
 .courses-container {
   display: flex;
-  gap: 20px;
-  margin-top: 20px; /* Ajusta o espaçamento no topo */
+  gap: 20px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite que os cursos quebrem para a linha de baixo em telas menores */
+  max-width: 1200px; /* Limita a largura do container a 1200px */
+  width: 100%;
+  justify-content: space-between; /* Distribui os cursos com o mesmo espaço entre eles */
+  margin: 20px;
 }
 
 .curso {
-  width: 200px; /* Diminuímos o tamanho dos cards */
-  height: 200px; /* Tamanho menor */
-  background-color: #202020; /* Tom de cinza mais escuro */
-  padding: 15px;
+  width: 200px;
+  height: 200px;
+  background-color: #202020;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,7 +54,7 @@
 
 .curso:hover {
   transform: scale(1.05);
-  background-color: #555; /* Cor mais escura ao passar o mouse */
+  background-color: #555;
 }
 
 .curso-image {
