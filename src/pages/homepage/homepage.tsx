@@ -1,5 +1,5 @@
 import './homepage.css';
-
+import excelImage from '../../assets/excel-avancado-1.jpg';
 
 const Home = () => {
   return (
@@ -10,10 +10,19 @@ const Home = () => {
       <div className="main-content">
         <div className="courses-container">
           <div className="curso">
-            <p>CURSO 1</p>
+            <img src={excelImage} alt="Curso de Excel Avançado" className="curso-image" />
+            <div className="curso-info">
+              <p>Curso de Excel Avançado</p>
+              <span>Aprenda Excel do básico ao avançado com exercícios práticos.</span>
+            </div>
           </div>
           <div className="curso">
-            <p>CURSO 2</p>
+            <p>Curso de Node.js</p>
+            <span>Dominando o backend com Node.js.</span>
+          </div>
+          <div className="curso">
+            <p>Curso de TypeScript</p>
+            <span>Tipos no JavaScript para maior segurança.</span>
           </div>
         </div>
       </div>
