@@ -23,6 +23,7 @@ a:hover {
 }
 
 body {
+  background-color: #333;
   margin: 0;
   display: flex;
   place-items: center;
@@ -65,4 +66,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+html {
+  height: 100%; /* Isso assegura que o fundo cubra toda a tela */
 }
