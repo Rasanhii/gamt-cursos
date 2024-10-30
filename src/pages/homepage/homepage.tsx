@@ -2,6 +2,7 @@ import './homepage.css';
 import excelImage from '../../assets/excel.jpg';
 import wordImage from '../../assets/word3.jpg';
 import powerImage from '../../assets/powerpoint4.jpg';
+import powerbiImage from '../../assets/powerbi2.png';
 import { useNavigate } from 'react-router-dom'; // Importa o hook para navegação
 
 const Home = () => {
@@ -40,6 +41,14 @@ const Home = () => {
             <div className="curso-info">
               <p>Curso de Powerpoint Avançado</p>
               <span>Desenvolva suas habilidades em confeccionar apresentações.</span>
+            </div>
+          </div>
+
+          <div className="curso" onClick={handleExcelClick}>
+            <img src={powerbiImage} alt="Curso de Power BI Avançado" className="curso-image" />
+            <div className="curso-info">
+              <p>Curso de Power BI</p>
+              <span>Aprenda uma ferramenta importante para o meio profissional.</span>
             </div>
           </div>
           

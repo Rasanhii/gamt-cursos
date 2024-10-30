@@ -55,7 +55,6 @@
   margin-top: 40px;
   flex: 1 1 250px;
   max-width: 250px;
-  height: 250px;
   background-color: #202020;
   padding: 10px;
   display: flex;
@@ -75,7 +74,7 @@
 }
 
 .curso-image {
-  width: 150px;
+  width: 100px;
   height: 100px;
   border-radius: 8px;
   margin-bottom: 10px;
