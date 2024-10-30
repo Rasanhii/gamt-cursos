@@ -52,6 +52,27 @@ const Excel = () => {
             </ul>
           </div>
 
+          <div className="curso" onClick={handleExcelClick}>
+            <h2>Fundação Bradesco</h2>
+            <p>
+              Este curso é fornecido pela <strong>Fundação Bradesco</strong> e tem como objetivo ensinar desde os conceitos básicos até as funcionalidades avançadas do Excel. 
+              Ideal para quem deseja aprimorar suas habilidades em planilhas, funções e relatórios, tornando-se um profissional mais eficiente e preparado.
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.ev.org.br/cursos/microsoft-excel-2016-basico"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontSize: '18px', textDecoration: 'none', color: '#007bff' }}
+                >
+                  Acessar Curso de Excel 2016
+                </a>
+              </li>
+              {/* Aqui você pode adicionar outros links relevantes ao curso de Excel */}
+            </ul>
+          </div>
+
         </div>
       </div>
     </div>

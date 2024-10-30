@@ -25,10 +25,10 @@ a:hover {
 body {
   background-color: #333;
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -68,6 +68,3 @@ button:focus-visible {
   }
 }
 
-html {
-  height: 100%; /* Isso assegura que o fundo cubra toda a tela */
-}
