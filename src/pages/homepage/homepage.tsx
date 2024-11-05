@@ -51,19 +51,6 @@ const Home = () => {
               <span>Aprenda uma ferramenta importante para o meio profissional.</span>
             </div>
           </div>
-          
-          <div className="curso">
-            <p>Curso de TypeScript</p>
-            <span>Tipos no JavaScript para maior segurança.</span>
-          </div>
-          <div className="curso">
-            <p>Curso de TypeScript</p>
-            <span>Tipos no JavaScript para maior segurança.</span>
-          </div>
-          <div className="curso">
-            <p>Curso de TypeScript</p>
-            <span>Tipos no JavaScript para maior segurança.</span>
-          </div>
         </div>
       </div>
     </div>
