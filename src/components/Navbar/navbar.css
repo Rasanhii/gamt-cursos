@@ -10,6 +10,7 @@
 .navbar-logo {
   width: 125px; /* Tamanho da imagem no header */
   margin-right: auto; /* Mantém a logo no canto esquerdo */
+  margin-left: 30px;
 }
 
 .nav-links-container {

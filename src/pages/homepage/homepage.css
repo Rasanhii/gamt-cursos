@@ -19,26 +19,60 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100px;
-  height: 100%; /* Ocupa a altura total da tela */
+  width: 200px;
+  height: 100%;
   background-color: #1c1c1c;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding-top: 70px; /* Evita sobreposição com a navbar */
-  z-index: 999; /* Fica abaixo da navbar */
+  padding-top: 20px;
+}
+
+.sidebar-nav {
+  width: 100%;
+  color: #ddd;
+  font-size: 16px;
+}
+
+.nav-item {
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #333;
+  border-bottom: 1px solid #444;
+}
+
+.nav-item:hover {
+  background-color: #555;
+}
+
+.submenu {
+  background-color: #2b2b2b;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu a {
+  color: #aaa;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  color: #fff;
 }
 
 /* Ajuste no conteúdo principal */
 .main-content {
   flex-grow: 1;
-  margin-left: 100px; /* Espaço para não sobrepor a sidebar */
-  margin-top: 80px; /* Espaço para não sobrepor a navbar */
+  margin-left: 200px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-  width: calc(100% - 100px); /* Ajusta o tamanho considerando a sidebar */
+  width: calc(100% - 200px);
 }
 
 /* Cards de cursos */

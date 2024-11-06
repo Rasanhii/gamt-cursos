@@ -3,23 +3,22 @@ import excelImage from '../../assets/excel.jpg';
 import wordImage from '../../assets/word3.jpg';
 import powerImage from '../../assets/powerpoint4.jpg';
 import powerbiImage from '../../assets/powerbi2.png';
-import { useNavigate } from 'react-router-dom'; // Importa o hook para navegação
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-  const navigate = useNavigate(); // Hook para navegar entre páginas
+  const navigate = useNavigate();
 
   const handleExcelClick = () => {
-    navigate('/excel'); // Redireciona para a página de excel
+    navigate('/excel');
   };
 
   return (
     <div className="homepage-container">
-      <div className="sidebar">
-        <img src="src/assets/gamt-header.png" alt="Gamt" className="logo" />
-      </div>
+
+      
+
       <div className="main-content">
         <div className="courses-container">
-
           <div className="curso" onClick={handleExcelClick}>
             <img src={excelImage} alt="Curso de Excel Avançado" className="curso-image" />
             <div className="curso-info">
