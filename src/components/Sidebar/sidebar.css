@@ -94,8 +94,8 @@
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   .sidebar {
-      width: 75%; /* Adjust width for mobile view */
-      background-color: #202020;
+      width: 26%; /* Adjust width for mobile view */
+      background-color: #1c1c1c;
   }
 }
 
