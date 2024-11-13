@@ -1,4 +1,4 @@
-/* sidebar.css */
+/* Sidebar container */
 .sidebar {
   position: fixed;
   top: 0;
@@ -10,22 +10,41 @@
   flex-direction: column;
   align-items: center;
   padding-top: 150px;
-  transition: transform 0.3s ease; /* Adicionado para transição de entrada/saída */
-  transform: translateX(0); /* Posição padrão em telas maiores */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 10;
 }
 
-@media (max-width: 768px) {
-  .sidebar {
-      width: 180px; /* Ajuste a largura */
-      transform: translateX(-100%); /* Esconde a sidebar */
-  }
-
-  /* Classe para mostrar a sidebar em telas pequenas */
-  .sidebar.show {
-      transform: translateX(0);
-  }
+.sidebar.visible {
+  transform: translateX(0);
 }
 
+/* Hamburger icon with rounded square background */
+.hamburger-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: #202020;
+  border-radius: 8px;
+  font-size: 24px;
+  color: #ddd;
+  cursor: pointer;
+  z-index: 20;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  margin-top: 90px;
+}
+
+.hamburger-icon:hover {
+  background-color: #444;
+}
+
+/* Menu item styling */
 .menu-item {
   cursor: pointer;
   padding: 10px;
@@ -71,3 +90,12 @@
 .arrow.up {
   transform: rotate(180deg);
 }
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 75%; /* Adjust width for mobile view */
+      background-color: #202020;
+  }
+}
+
