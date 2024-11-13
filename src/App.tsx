@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter basename='/gamt-cursos'>
       <Navbar /> 
       <div className="app-container">
-        <Sidebar /> {/* Sidebar será renderizada em todas as páginas */}
+        <Sidebar />
         <div className="content-container">
           <Routes>
             <Route path="/">

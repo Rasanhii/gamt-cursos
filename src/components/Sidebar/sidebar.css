@@ -1,58 +1,73 @@
 /* sidebar.css */
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #1c1c1c;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  transition: transform 0.3s ease; /* Adicionado para transição de entrada/saída */
+  transform: translateX(0); /* Posição padrão em telas maiores */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      width: 180px; /* Ajuste a largura */
+      transform: translateX(-100%); /* Esconde a sidebar */
   }
-  
-  .menu-item {
-    cursor: pointer;
-    padding: 10px;
-    width: 90%;
-    color: #ddd;
-    font-weight: bold;
-    border-radius: 12px;
-    text-align: center;
-    transition: background-color 0.3s ease;
+
+  /* Classe para mostrar a sidebar em telas pequenas */
+  .sidebar.show {
+      transform: translateX(0);
   }
-  
-  .menu-item:hover {
-    background-color: #333;
-  }
-  
-  .submenu {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    transition: max-height 0.3s ease;
-    overflow: hidden;
-  }
-  
-  .submenu a {
-    padding: 5px 10px;
-    color: #ddd;
-    text-decoration: none;
-    border-radius: 4px;
-  }
-  
-  .submenu a:hover {
-    background-color: #444;
-  }
-  
-  .arrow {
-    margin-left: 8px;
-    transition: transform 0.3s ease;
-  }
-  
-  .arrow.up {
-    transform: rotate(180deg);
-  }
-  
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 10px;
+  width: 90%;
+  color: #ddd;
+  font-weight: bold;
+  border-radius: 12px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  font-size: large;
+}
+
+.menu-item:hover {
+  background-color: #333;
+}
+
+.submenu {
+  width: 90%;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+.submenu a {
+  padding: 5px 10px;
+  color: #ddd;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.submenu a:hover {
+  background-color: #444;
+}
+
+.arrow {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.up {
+  transform: rotate(180deg);
+}

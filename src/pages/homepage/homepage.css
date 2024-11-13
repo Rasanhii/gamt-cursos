@@ -14,26 +14,6 @@
   z-index: 1000; /* Garante que a navbar fique acima dos outros elementos */
 }
 
-/* Sidebar fixa */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100%;
-  background-color: #1c1c1c;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-}
-
-.sidebar-nav {
-  width: 100%;
-  color: #ddd;
-  font-size: 16px;
-}
-
 .nav-item {
   padding: 15px;
   cursor: pointer;
@@ -66,7 +46,7 @@
 /* Ajuste no conteúdo principal */
 .main-content {
   flex-grow: 1;
-  margin-left: 200px;
+  margin-left: 125px;
   margin-top: 80px;
   display: flex;
   justify-content: center;
@@ -127,5 +107,31 @@
 
 .curso:hover .curso-image {
   transform: scale(1.1);
+}
+
+/* homepage.css */
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .courses-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .curso {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .curso-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .curso-info {
+    text-align: center;
+    padding: 10px;
+  }
 }
 
