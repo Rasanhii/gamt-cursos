@@ -21,7 +21,7 @@
 
 .nav-links {
   display: flex;
-  gap: 50px;
+  gap: 20px;
 }
 
 .nav-links a {
@@ -61,4 +61,21 @@
 .nav-links li:hover {
   color: #5a5a5a; /* Efeito de cor ao passar o mouse */
   transform: scale(1.1); /* Efeito de aumento */
+}
+
+/* Responsividade */
+@media (max-width: 650px) {
+  .nav-links {
+    display: none; /* Esconde os links em telas pequenas */
+  }
+
+  .navbar-menu-icon {
+    display: flex; /* Mostra o ícone do menu no mobile */
+  }
+}
+
+@media (max-width: 650px) and (hover: hover) {
+  .navbar {
+    justify-content: space-between;
+  }
 }

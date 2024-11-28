@@ -58,19 +58,17 @@
 /* Cards de cursos */
 .courses-container {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center; /* Centraliza os cards */
+  justify-content: center; /* Centraliza os cards no container */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha quando necessário */
+  gap: 20px; /* Espaçamento entre os cards */
   padding: 20px;
 }
 
 .curso {
-  margin-top: 40px;
-  flex: 1 1 250px;
-  max-width: 250px;
+  flex: 1 1 calc(33.33% - 20px); /* Até 3 cards por linha em telas maiores */
+  max-width: calc(33.33% - 20px);
   background-color: #202020;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,6 +78,7 @@
   text-align: center;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra */
 }
 
 .curso:hover {
@@ -109,29 +108,17 @@
   transform: scale(1.1);
 }
 
-/* homepage.css */
-
-/* Estilos para dispositivos móveis */
-@media (max-width: 768px) {
-  .courses-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
   .curso {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-
-  .curso-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .curso-info {
-    text-align: center;
-    padding: 10px;
+    flex: 1 1 calc(50% - 20px); /* Até 2 cards por linha em telas médias */
+    max-width: calc(50% - 20px);
   }
 }
 
+@media (max-width: 768px) {
+  .curso {
+    flex: 1 1 100%; /* Um card por linha em telas menores */
+    max-width: 100%;
+  }
+}
